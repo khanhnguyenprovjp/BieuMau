@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng Ký Thành Viên CLB Thể Thao</title>
+    
+    
+</head>
+<body>
+    <div style="width: 400px; margin-left: 490px; margin-right: 100px;">
+        <p style="font-family:verdana" > <b><x> ĐĂNG KÝ THÀNH VIÊN CLB THỂ THAO </x></b> </p>
+    </div>
+    <br> </br>
+    <br> </br>
+    
+    <div style="display: flex; justify-content: center; align-items: center; height: 200px;">
+    <form action = "login.asp" method = "post">
+        <table>
+            <tr>
+                <td><label for="name">Họ tên:</label></td>
+                <td><input type="text" id="name" name="name" ></td>
+            </tr>
+            <tr>
+                <td><label for="password">Mật khẩu:</label></td>
+                <td><input type="password" id="password" name="password" align = "center"></td>
+            </tr>
+            <tr>
+                <td><label for="dob">Ngày sinh:</label></td>
+                <td><input type="date" id="dob" name="dob" ></td>
+            </tr>
+            <tr>
+                <td><label for="address">Địa chỉ:</label></td>
+                <td>
+                    <textarea id="address" name="address" rows="3" cols="30"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td>Giới tính:</td>
+                <td>
+                    <input type="radio" id="male" name="gender" value="male">
+                    <label for="male">Nam</label>
+                    <input type="radio" id="female" name="gender" value="female">
+                    <label for="female">Nữ</label>
+                </td>
+            </tr>
+            <tr>
+                <td>Sở thích:</td>
+                <td>
+                    <input type="checkbox" id="chess" name="hobbies" value="chess" >
+                    <label for="chess">Cờ vua</label><br>
+                    <input type="checkbox" id="gaming" name="hobbies" value="gaming" >
+                    <label for="gaming">Trò chơi điện tử</label><br>
+                    <input type="checkbox" id="travel" name="hobbies" value="travel" >
+                    <label for="travel">Du lịch</label><br>
+                    <input type="checkbox" id="flowers" name="hobbies" value="flowers">
+                    <label for="flowers">Cắm hoa</label><br>
+                    <input type="checkbox" id="cooking" name="hobbies" value="cooking">
+                    <label for="cooking">Nấu ăn</label>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="file">Hồ sơ đính kèm:</label></td>
+                <td>
+                    <input type="file" id="file" name="file">
+                </td>
+            </tr>
+            <tr>
+                <td><label for="club">Đăng kí CLB:</label></td>
+                <td>
+                    <select id="club" name="club">
+                        
+                        <option value="bóng chuyền" selected>Bóng chuyền</option>
+                        <option value="bóng rổ" selected>bóng rổ</option>
+                        <option value="cầu lông" selected>cầu lông</option>
+                        <option value="bóng đá" selected>bóng đá</option>
+                        <option value="pickle ball" selected>pickle ball</option>
+                        <option value="tennis" selected>tennis</option>
+                        <option value="bóng bàn" selected>bóng bàn</option>
+                        <option value=" " selected> </option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" style="text-align: center;">
+                    <button type="submit">Đăng kí</button>
+                </td>
+            </tr>
+        </table>
+    </form>
+</div>
+</body>
+</html>
